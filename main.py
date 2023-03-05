@@ -19,6 +19,7 @@ fpsClock = pygame.time.Clock()
 
 font = pygame.font.SysFont('Arial', 10)
 
+SMALL_FONT = pygame.font.SysFont('comicsans', 30)
 objects = []
 #classes go here:
 
@@ -31,6 +32,9 @@ BLUE = (255,0,0)
 # Drawing Rectangle
 square_num = 100
 while True:
+  text_for_Space = SMALL_FONT.render('Press Space Bar', True, WHITE)
+  text_for_OR = SMALL_FONT.render('OR', True, WHITE)
+  text_for_Click = SMALL_FONT.render('Click on dice to Roll', True, WHITE)
   print("Hello world")
   zxc = input("P")
   if  zxc == "P":
